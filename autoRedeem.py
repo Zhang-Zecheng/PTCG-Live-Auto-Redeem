@@ -231,7 +231,7 @@ def start_redeem_thread():
     reference_width = 2560
     reference_height = 1440
     target_window_sizes = [(2560, 1440), (1920, 1080),
-                           (1600, 900), (1368, 768), (1280, 720)]
+                           (1600, 900), (1368, 768), (1280, 720), (1024, 576), (960, 540), (800, 450), (640, 360)]
     scales = [min(target_width / reference_width, target_height / reference_height)
               for target_width, target_height in target_window_sizes]
     input_field_coords = find_element(input_field_image, scales=scales)
