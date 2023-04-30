@@ -8,7 +8,7 @@ a = Analysis(
     ['autoRedeem.py'],
     pathex=[],
     binaries=[],
-    datas=[('pokemon.jpg', '.'), ('Mimikyu.ico', '.'), ('input.jpg', '.'), ('redeem.jpg', '.'), ('submit.jpg', '.'), ('Done.jpg', '.'), ('collectAll.jpg', '.')],
+    datas=[('resources/pokemon.jpg', 'resources.'), ('resources/Mimikyu.ico', 'resources.'), ('resources/input.jpg', 'resources.'), ('resources/redeem.jpg', 'resources.'), ('resources/submit.jpg', 'resources.'), ('resources/Done.jpg', 'resources.'), ('resources/collectAll.jpg', 'resources.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

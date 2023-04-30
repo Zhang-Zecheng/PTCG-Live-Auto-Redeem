@@ -17,8 +17,8 @@ import os
 
 def resource_path(relative_path):
     if hasattr(sys, '_MEIPASS'):
-        return os.path.join(sys._MEIPASS, relative_path)
-    return os.path.join(os.path.abspath('.'), relative_path)
+        return os.path.join(sys._MEIPASS, 'resources', relative_path)
+    return os.path.join(os.path.abspath('.'), 'resources', relative_path)
 
 
 stop = False
@@ -156,7 +156,6 @@ def create_main_window():
     main_frame.pack()
 
     # Load the image
-    # Replace the original file path with the new one
     image = Image.open(pokemon_tcg_image)
     global photo
     photo = ImageTk.PhotoImage(image)
